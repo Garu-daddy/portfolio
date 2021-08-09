@@ -41,17 +41,18 @@
     </nav>
 
     <!-- Home -->
-    <section id="home"></section>
-    <img
-      src="images/profile.png"
-      alt="Yonn's profile photo"
-      class="home__avatar"
-    />
-    <h1 class="home__title">Hello, I'm Garu-Daddy</h1>
-    <h2 class="home__description">
-      A web designer, who's willing to be Full-stack developer.
-    </h2>
-    <button class="home__contact">Contact Me</button>
+    <section id="home">
+      <img
+        src="images/profile.png"
+        alt="Yonn's profile photo"
+        class="home__avatar"
+      />
+      <h1 class="home__title">Hello, I'm Garu-Daddy</h1>
+      <h2 class="home__description">
+        A web designer, who's willing to be Full-stack developer.
+      </h2>
+      <button class="home__contact">Contact Me</button>
+    </section>
 
     <!-- About -->
     <section id="about">
@@ -159,7 +160,62 @@
     </section>
 
     <!-- Work -->
-    <section id="work"></section>
+    <section id="work">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn">
+          All <span class="category__count">4</span>
+        </button>
+        <button class="category__btn">
+          Front-end <span class="category__count">4</span>
+        </button>
+        <button class="category__btn">
+          Back-end <span class="category__count">0</span>
+        </button>
+      </div>
+
+      <div class="work__projects">
+        <a href="" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/kokoa-clone.png"
+            alt="kokoa-clone"
+          />
+          <div class="project__description">
+            <h3>Kokoa Clone</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+
+        <a href="" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/cafe-garu.png"
+            alt="garu-website"
+          />
+          <div class="project__description">
+            <h3>Cafe Garu</h3>
+            <span>Introducig website with simple HTML and CSS</span>
+          </div>
+        </a>
+
+        <a href="" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/chinese-oral-test.png"
+            alt="chinese-tests"
+          />
+          <div class="project__description">
+            <h3>Chinese oral test</h3>
+            <span
+              >Website that shows different types of Chinese oral tests using
+              Media query</span
+            >
+          </div>
+        </a>
+      </div>
+    </section>
 
     <!-- Testimonials -->
     <section id="testimonials"></section>
