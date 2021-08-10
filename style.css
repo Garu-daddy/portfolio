@@ -59,7 +59,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-medium);
+  font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
@@ -93,7 +93,9 @@ button {
   background-color: var(--color-blue);
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 12px;
+  position: sticky;
+  top: 0;
 }
 
 .navbar__menu {
@@ -156,4 +158,89 @@ button {
 .home__contact:hover {
   background-color: #2789ca;
   transition: 0.3s ease-in-out;
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 160px;
+  height: 160px;
+  font-size: 70px;
+  line-height: 160px;
+  margin: auto;
+  border: 3px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  color: var(--color-blue);
+}
+
+.major__icon i,
+#html__icon,
+#css__icon,
+#java__icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.major__icon i:hover {
+  transform: scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-light-grey);
+}
+
+#html__icon:hover {
+  color: tomato;
+  transform: rotate(10deg);
+}
+
+#css__icon:hover {
+  color: rgb(62, 104, 243);
+  transform: rotate(10deg);
+}
+
+#java__icon:hover {
+  color: goldenrod;
+  transform: rotate(10deg);
+}
+
+.school {
+  display: flex;
+  align-items: center;
+}
+.school__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.school__name,
+.school__period {
+  color: var(--color-light-grey);
+}
+
+.school__name {
+  font-size: var(--font-small);
+}
+
+.school__period {
+  font-size: var(--font-micro);
+}
+
+.school__logo {
+  width: 60px;
+  height: 10px;
 }
