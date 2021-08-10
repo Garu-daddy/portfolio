@@ -8,7 +8,7 @@
   --color-dark-pink: #ff6863;
   --color-grey: #4d4d4d;
   --color-light-grey: #616161;
-  --color-blue: #73aace;
+  --color-blue: #a8cbec;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -79,6 +79,13 @@ p {
   margin: 4px 0;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -100,7 +107,8 @@ p {
 
 .navbar__logo img {
   width: 30px;
-  text-align: center;
+
+  color: var(--color-white);
 }
 
 .navbar__menu__item {
@@ -112,8 +120,40 @@ p {
 
 .navbar__menu__item:hover {
   background-color: #2789ca;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar__menu__item.active {
   border: 1px solid var(--color-white);
+}
+
+/* Home */
+#home {
+  background: url(images/home-background.png) center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 350px;
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  margin: 24px;
+  font-size: var(--weight-regular);
+  font-size: var(--font-regular);
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  padding: 8px 12px;
+}
+
+.home__contact:hover {
+  background-color: #2789ca;
+  transition: 0.3s ease-in-out;
 }
