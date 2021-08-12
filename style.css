@@ -248,8 +248,8 @@ button {
 }
 
 .school__logo {
-  width: 60px;
-  height: 10px;
+  width: 90px;
+  height: 20px;
 }
 
 /* Skills */
@@ -413,7 +413,6 @@ button {
 
 .testimonials {
   margin: 40px;
-  margin: auto;
 }
 
 .testimonial {
