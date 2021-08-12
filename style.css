@@ -98,6 +98,7 @@ button {
   position: fixed;
   box-sizing: border-box;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar__menu {
@@ -403,4 +404,46 @@ button {
   left: 50%;
   margin-left: -12px;
   margin-top: 8px;
+}
+
+/* Testimonial */
+#testimonials {
+  background-color: rgb(240, 240, 240);
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+  padding: 18px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+.testimonial__speech-bubble a {
+  color: var(--color-blue);
 }
