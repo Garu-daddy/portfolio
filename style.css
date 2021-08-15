@@ -84,6 +84,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Navbar */
@@ -324,6 +325,7 @@ button {
   border-radius: 12px;
   font-size: var(--font-regular);
   padding: 8px 32px;
+  position: relative;
 }
 
 .work__categories {
@@ -340,9 +342,9 @@ button {
   font-size: var(--font-micro);
   line-height: 18px;
   opacity: 0;
-  position: relative;
-  top: -20px;
-  left: 4px;
+  position: absolute;
+  top: -15px;
+  right: 7px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -355,7 +357,7 @@ button {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 8px;
 }
 
 .work__projects {
@@ -525,8 +527,24 @@ button {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .home__avatar {
+    width: 250px;
+  }
+
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: 26px;
   }
   #navbar {
     flex-direction: column;
@@ -551,22 +569,58 @@ button {
 
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 5px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
     flex-direction: column;
   }
 
+  .category__btn {
+    margin: 5px 0;
+  }
+
   .project {
     flex-grow: 1;
   }
 
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .testimonial__avatar:nth-child(odd),
+  .testimonial__avatar:nth-child(even) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .arrow-up {
+    bottom: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
   }
 }
