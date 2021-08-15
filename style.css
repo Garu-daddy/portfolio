@@ -148,7 +148,7 @@ button {
 #home {
   background: url(images/home-background.png) center/cover no-repeat;
   padding: 40px;
-  padding-top: 100px;
+  padding-top: 90px;
   text-align: center;
   opacity: 1;
 }
@@ -490,6 +490,27 @@ button {
   transform: scale(1.2);
   color: rgb(79, 246, 252);
   transition: all 0.2s ease-in-out;
+}
+
+/* Arrow up */
+.arrow-up {
+  font-size: 45px;
+  color: var(--color-white);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(108, 161, 240);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
