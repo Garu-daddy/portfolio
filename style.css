@@ -364,6 +364,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.97) translateY(30px);
 }
 
 .project {
@@ -376,6 +383,10 @@ button {
   align-items: center;
   background-color: rgb(224, 224, 224);
   border-radius: 15px;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
@@ -494,13 +505,13 @@ button {
 
 /* Arrow up */
 .arrow-up {
-  font-size: 45px;
+  font-size: 38px;
   color: var(--color-white);
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: rgb(108, 161, 240);
   border-radius: 50%;
   opacity: 0;
