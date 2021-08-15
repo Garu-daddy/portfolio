@@ -409,7 +409,7 @@ button {
 }
 
 .project__description h3 {
-  color: white;
+  color: rgb(111, 204, 241);
 }
 
 .project:hover .project__description {
@@ -419,7 +419,7 @@ button {
 
 .project__description h3:after {
   content: "";
-  width: 25px;
+  width: 50px;
   height: 2px;
   display: block;
   background-color: white;
@@ -427,6 +427,7 @@ button {
   left: 50%;
   margin-left: -12px;
   margin-top: 8px;
+  transform: translateX(-13px);
 }
 
 /* Testimonial */
