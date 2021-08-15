@@ -124,14 +124,12 @@ button {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  border: 1px solid transparent;
 }
 
 .navbar__menu__item:hover {
-  background-color: #2789ca;
+  background-color: #4498cf;
   transition: 0.3s ease-in-out;
-}
-
-.navbar__menu__item.active {
   border: 1px solid var(--color-white);
 }
 
@@ -332,12 +330,6 @@ button {
   margin: 40px;
 }
 
-.category__btn.active,
-.category__btn:hover {
-  background-color: var(--color-blue);
-  color: var(--color-white);
-}
-
 .category__count {
   background-color: rgb(213, 157, 245);
   border-radius: 50%;
@@ -354,7 +346,13 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
-.category__btn.active .category__count,
+.category__btn.selected,
+.category__btn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
