@@ -545,9 +545,9 @@ button {
 
   .navbar__toggle-btn {
     display: block;
-    top: 16px;
+    top: 10px;
     right: 16px;
-    font-size: 26px;
+    font-size: 22px;
   }
   #navbar {
     flex-direction: column;
