@@ -114,6 +114,7 @@ button {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  margin-left: 10px;
 }
 
 .navbar__logo img {
@@ -420,6 +421,7 @@ button {
 .project:hover .project__description {
   opacity: 0.6;
   transform: translateY(0px);
+  padding: 0px 10px;
 }
 
 .project__description h3:after {
@@ -438,6 +440,7 @@ button {
 /* Testimonial */
 #testimonials {
   background-color: rgb(240, 240, 240);
+  margin-top: 0px;
 }
 
 .testimonials {
@@ -502,8 +505,8 @@ button {
 }
 
 .contact__links i:hover {
-  transform: scale(1.2);
-  color: rgb(79, 246, 252);
+  transform: scale(1.1);
+  color: rgb(108, 161, 240);
   transition: all 0.2s ease-in-out;
 }
 
@@ -549,6 +552,7 @@ button {
     right: 16px;
     font-size: 22px;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -556,6 +560,10 @@ button {
   }
 
   #navbar.navbar--dark {
+    padding: 16px;
+  }
+
+  .navbar__toggle-btn.navbar--dark {
     padding: 16px;
   }
 
@@ -590,6 +598,10 @@ button {
 
   .project {
     flex-grow: 1;
+  }
+
+  #testimonials {
+    margin-top: 50px;
   }
 
   .testimonial {
