@@ -681,9 +681,8 @@ button {
     --font-micro: 10px;
   }
 
-  #testimonials.section {
-    margin: 0;
-    margin-top: 20px;
-    padding: 0;
-    padding-top: 20px;
+
+
+  .testimonials {
+    margin: 10px;
   }
