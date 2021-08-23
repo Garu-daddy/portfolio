@@ -573,7 +573,7 @@ button {
     text-align: center;
     width: 100%;
     display: none;
-    padding: 10px 180px;
+    padding: 10px 100px;
   }
 
   .navbar__menu__item:hover {
